@@ -13,7 +13,8 @@ const app = express();
 app.use(express.static('./build'));
 
 app.get('/*', (req, res) => {
-  const app = ReactDOMServer.renderToString(<RootComponent />);
+  let staticContext = {}
+  const app = ReactDOMServer.renderToString(<RootComponent location={req.url} context={staticContext} />);
 
   const indexFile = path.resolve('./build/index.html');
   fs.readFile(indexFile, 'utf8', (err, data) => {
