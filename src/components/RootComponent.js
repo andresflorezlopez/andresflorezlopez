@@ -2,7 +2,7 @@ import React from 'react';
 
 import { HashRouter, Switch, Route } from "react-router-dom";
 
-import Home from "./screens/home";
+import Home from "./screens/Home";
 
 const RootComponent = ({location, context}) => (
   <HashRouter location={location} context={context}>

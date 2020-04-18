@@ -1,9 +1,14 @@
 import React from 'react';
 
+import MainContainer from '../ui/main-container/MainContainer';
+
 const Home = () => {
   return (
-    <div className="App">
-    </div>
+    <MainContainer>
+      <div>
+        PRUEBA
+      </div>
+    </MainContainer>
   );
 }
 
