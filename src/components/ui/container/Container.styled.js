@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   font-family: verdana;
   @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
   }
   
   @media (min-width: 481px) and (max-width: 1024px) {

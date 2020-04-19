@@ -29,6 +29,7 @@ position: relative;
 bottom: 60px;
 flex-direction: row;
 display: flex;
+margin-bottom: -60px;
 @media (min-width: 320px) and (max-width: 480px) {
   bottom: 0px;
 }
@@ -68,7 +69,7 @@ color: white;
 }
 
 @media (min-width: 1025px){ 
-  height: 450px;
+  height: 340px;
   width: 490px;
   position: absolute;
   top: 150px;
@@ -91,8 +92,8 @@ export const OpinionName = styled.div`
 }
 
 @media (min-width: 1025px){ 
-    font-size: 75px;
-  }
+  font-size: 65px;
+}
 `;
 
 export const OpinionDescription = styled.div`
@@ -113,7 +114,13 @@ export const RateContainer = styled.div`
 margin-top: 10px;
 height: 60px;
 display: flex;
-flex-direction: row
+flex-direction: row;
+@media (min-width: 1025px){ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
 `;
 
 export const Like = styled.div`
