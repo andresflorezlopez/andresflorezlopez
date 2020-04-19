@@ -10,16 +10,16 @@ const Header = () => (
     <Container>
       <Tags.MenuListContainer>
         <Tags.MenuItem>
-          <Link to="/">Work.</Link>
+          <Tags.Link to="/">Rule of Thumb</Tags.Link>
         </Tags.MenuItem>
         <Tags.MenuItem>
-          <Link to="/about">About.</Link>
+          <Tags.Link to="/about">Past Trials</Tags.Link>
         </Tags.MenuItem>
         <Tags.MenuItem>
-          <Link to="/skills">Skills.</Link>
+          <Tags.Link to="/skills">Past Trials copy</Tags.Link>
         </Tags.MenuItem>
         <Tags.MenuItem>
-          <Link to="/contact">Contact.</Link>
+          <Tags.Link to="/contact">How It Works</Tags.Link>
         </Tags.MenuItem>
       </Tags.MenuListContainer>
     </Container>

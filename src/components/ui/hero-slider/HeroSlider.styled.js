@@ -11,9 +11,19 @@ background: rgba(255, 255, 0, 0.9);
 `;
 
 export const Comments = styled.div`
+background: rgba(255, 255, 0, 0.9);
+@media (min-width: 320px) and (max-width: 480px) {
+width: 100%;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px){ 
 height: 450px;
 width: 490px;
-background: rgba(255, 255, 0, 0.9);
+}
 `;
 
 export const HeroSliderContainer = styled.div`
