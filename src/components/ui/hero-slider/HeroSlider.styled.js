@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const ImageContainer = styled.div`
 @media (min-width: 320px) and (max-width: 480px) {
   overflow: hidden;
+  width: 100%;
+  max-height: 300px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-
+  width: 100%;
+  overflow: hidden;
+  max-height: 500px;
 }
 
 @media (min-width: 1025px){ 
@@ -32,6 +36,7 @@ display: flex;
 margin-bottom: -60px;
 @media (min-width: 320px) and (max-width: 480px) {
   bottom: 0px;
+  margin: 0;
 }
 `;
 
