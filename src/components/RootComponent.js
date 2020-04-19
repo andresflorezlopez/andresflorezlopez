@@ -7,7 +7,7 @@ import Home from "./screens/Home";
 const RootComponent = ({location, context}) => (
   <HashRouter location={location} context={context}>
       <Switch>
-        <Route exact path="/dashboard" component={Home} />
+        <Route exact path="/" component={Home} />
       </Switch>
   </HashRouter>
 );

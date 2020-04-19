@@ -4,7 +4,6 @@ export const ImageContainer = styled.div`
 @media (min-width: 320px) and (max-width: 480px) {
   overflow: hidden;
   width: 100%;
-  max-height: 300px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
