@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: verdana;
   @media (min-width: 320px) and (max-width: 480px) {
   }
   
