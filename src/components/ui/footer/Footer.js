@@ -1,14 +1,27 @@
 import React from "react";
 
-import Container from '../container/Container';
-
 import * as Tags from './Footer.styled';
 
 const Footer = () => (
   <Tags.Footer>
-    <Container>
-      <div>Footer</div>
-    </Container>
+    <Tags.FooterContainer>
+      <Tags.FooterItemsContainer>
+        <Tags.FooterItem>
+          Terms and Conditions
+        </Tags.FooterItem>
+        <Tags.FooterItem>
+          Politics
+        </Tags.FooterItem>
+        <Tags.FooterItem>
+          Contact us
+        </Tags.FooterItem>
+      </Tags.FooterItemsContainer>
+      <Tags.FooterSocialNetworkingContainer>
+        <Tags.FooterItem>
+          Follow us: 
+        </Tags.FooterItem>
+      </Tags.FooterSocialNetworkingContainer>
+    </Tags.FooterContainer>
   </Tags.Footer>
 );
 
