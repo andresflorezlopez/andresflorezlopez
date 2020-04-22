@@ -7,6 +7,13 @@ The boot-loaders work as a horizontal providers. In this group we can find Redux
 
 The root-component stars all boot-loaders that were desinged to support the app.
 
+## screen shots
+
+Mobile
+![GitHub Logo](/mobile.jpg)
+
+Desktop
+![GitHub Logo](/desktop.png)
 
 ## Available Scripts
 
