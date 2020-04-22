@@ -22,10 +22,13 @@ const CharacterCard = ({character, onVotingLike, onVotingDisike}) => {
       <Tags.Image alt="pope" src={KaneyWest} />
       <Tags.InformationContainer>
         <Tags.Name>{character.name}</Tags.Name>
-        <Tags.TimeAgo>{character.startDateInEntertaiment}</Tags.TimeAgo>
         <Tags.Description>
           {character.description}
         </Tags.Description>
+        <Tags.FooterCharacterCard>
+          <Tags.ViewProfile>View Full Report</Tags.ViewProfile>
+          <Tags.TimeAgo>{character.startDateInEntertaiment}</Tags.TimeAgo>
+        </Tags.FooterCharacterCard>
       </Tags.InformationContainer>
       <Tags.Rate>
         <Tags.ThumbsUp percentage={likePercentage} onClick={onVotingLike}>

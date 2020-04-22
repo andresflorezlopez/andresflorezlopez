@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsDown, faThumbsUp, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 import Container from '../container/Container';
 
 import * as Tags from './HeroSlider.styled';
@@ -22,8 +25,12 @@ const HeroSlider = () => (
           <Tags.OpinionMoreInformation>W More information</Tags.OpinionMoreInformation>
           <Tags.OpinionRate>What's Your Veredict?</Tags.OpinionRate>
           <Tags.RateContainer>
-            <Tags.Like/>
-            <Tags.Unlike/>
+            <Tags.Like>
+              <FontAwesomeIcon color="white" icon={faThumbsUp} size="2x" />
+            </Tags.Like>
+            <Tags.Unlike>
+            <FontAwesomeIcon color="white" icon={faThumbsDown} size="2x" flip="horizontal" pull="right" />
+            </Tags.Unlike>
           </Tags.RateContainer>
         </Tags.Comments>
       </Container>

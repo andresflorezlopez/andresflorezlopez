@@ -47,7 +47,24 @@ width: 30%;
 text-align: right;
 line-height: 4;
 padding-right: 10px;
-`
+position: relative;
+&:after, &:before {
+  left: 100%;
+	top: 85%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+&:after {
+  border-color: rgba(136,183,213,0);
+  border-left-color: rgba(0,0,0,0.23);
+  border-width: 12px;
+  margin-top: -30px;
+}
+`;
 
 export const ClosingInDays = styled.div`
 background: rgba(255,255,255,0.5);
@@ -65,7 +82,7 @@ export const Comments = styled.div`
 background: rgba(0, 0, 0, 0.2);
 color: white;
 @media (min-width: 320px) and (max-width: 480px) {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -130,9 +147,15 @@ flex-direction: row;
 export const Like = styled.div`
 width: 50%;
 background: rgba(66, 168, 161, 0.7);
+display: flex;
+justify-content:center;
+align-items: center;
 `;
 
 export const Unlike = styled.div`
 width: 50%;
 background: rgba(254, 145, 40, 0.7);
+display: flex;
+justify-content:center;
+align-items: center;
 `;

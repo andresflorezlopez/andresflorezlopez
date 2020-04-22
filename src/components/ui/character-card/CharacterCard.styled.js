@@ -58,7 +58,15 @@ export const Rate = styled.div`
   width: 100%;
 `;
 
-export const TimeAgo = styled.div``;
+export const TimeAgo = styled.div`
+justify-content: flex-end;
+align-self: center;
+padding: 0 21px;
+text-align: right;
+font-size: 12px;
+background: rgba(0,0,0,0.3);
+flex: 1;
+`;
 
 export const Image = styled.img`
 position: absolute;
@@ -93,4 +101,18 @@ color: white;
 export const RightPercentage = styled.div`
 color: white;
 margin-left: 10px;
+`;
+
+export const ViewProfile = styled.div`
+border: solid 2px;
+border-color: rgba(255, 255, 255, 0.4);
+padding: 10px 20px;
+font-weight: bold;
+margin: 10px 0;
+`;
+
+export const FooterCharacterCard = styled.div`
+display: flex;
+flex-direction: row;
+
 `;
