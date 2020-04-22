@@ -71,7 +71,7 @@ width: 100%;
 
 export const ThumbsDown = styled.div`
 background: rgba(66, 168, 161, 0.7);
-width: 50%;
+width: ${props => props.percentage}%;
 align-items: center;
 display: flex;
 justify-content: flex-end;
@@ -80,7 +80,7 @@ padding-right: 10px;
 
 export const ThumbsUp = styled.div`
 background: rgba(254, 145, 40, 0.7);
-width: 50%;
+width: ${props => props.percentage}%;
 align-items: center;
 display: flex;
 padding-left: 10px;
