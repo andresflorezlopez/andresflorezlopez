@@ -1,8 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+I did not have really much time. This project has a server side rendering and client side rendering functionliaties. The first one allow to handle a right SEO
+and the second one allow us to have a hot reloading function.
+
+The boot-loaders work as a horizontal providers. In this group we can find Redux, but we sould add every component/provider that any component can use it
+
+The root-component stars all boot-loaders that were desinged to support the app.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn test`
+
+Runs tests
 
 ### `yarn start`
 
