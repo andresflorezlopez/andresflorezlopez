@@ -11,11 +11,9 @@ The root-component stars all boot-loaders that were desinged to support the app.
 
 Mobile
 ![GitHub Logo](/mobile.jpg)
-Format: ![Alt Text](url)
 
 Desktop
 ![GitHub Logo](/desktop.png)
-Format: ![Alt Text](url)
 
 ## Available Scripts
 
