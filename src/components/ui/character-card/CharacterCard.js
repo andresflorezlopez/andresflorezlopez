@@ -8,7 +8,7 @@ import * as Tags from './CharacterCard.styled';
 import KaneyWest from '../../../assets/images/characters/kaney-west.png';
 
 
-const CharacterCard = ({character}) => {
+const CharacterCard = ({character, onVotingLike, onVotingDisike}) => {
   const { voting: {
       like, 
       dislike
@@ -28,13 +28,13 @@ const CharacterCard = ({character}) => {
         </Tags.Description>
       </Tags.InformationContainer>
       <Tags.Rate>
-        <Tags.ThumbsUp percentage={likePercentage}>
+        <Tags.ThumbsUp percentage={likePercentage} onClick={onVotingLike}>
           <FontAwesomeIcon color="white" icon={faThumbsUp} size="2x" />
           <Tags.RightPercentage>
             {likePercentage}%
           </Tags.RightPercentage>
         </Tags.ThumbsUp>
-        <Tags.ThumbsDown percentage={dislikePercentage}>
+        <Tags.ThumbsDown percentage={dislikePercentage} onClick={onVotingDisike} >
           <Tags.LeftPercentage>
             {dislikePercentage}%
           </Tags.LeftPercentage>
@@ -55,7 +55,9 @@ CharacterCard.propTypes = {
       like: PropTypes.number.isRequired,
       dislike: PropTypes.number.isRequired
     })
-  }).isRequired
+  }).isRequired,
+  onVotingLike: PropTypes.func.isRequired,
+  onVotingDisike: PropTypes.func.isRequired,
 }
 
 export default CharacterCard;
