@@ -3,9 +3,12 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 
 import App from "../lib/app";
-
 import Home from "./screens/Home";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
+
+import { MainContainer } from './RootComponent.styled';
 
 const RootComponent = ({location, context}) => {
   const [isReady, setIsReady] = useState(false);
@@ -17,7 +20,11 @@ const RootComponent = ({location, context}) => {
   }, []);
 
   if (!isReady) {
-    return <div>Loading</div>;
+    return (
+      <MainContainer>
+        <FontAwesomeIcon color="white" icon={faSpinner} size="2x" spin={true}/>
+      </MainContainer>
+    );
   }
 
   return (

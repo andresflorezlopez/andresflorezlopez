@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background-image: linear-gradient(to bottom right, withe, blue);
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 `;
