@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Title = styled.div`
+font-size: 30px;
+color: rgba(0, 0, 0, 0.8);
 @media (min-width: 320px) and (max-width: 480px) {
   margin-left: 20px;
 }

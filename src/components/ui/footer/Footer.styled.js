@@ -13,6 +13,9 @@ background-position: top;
 background-size: 8px 1px;
 background-repeat: repeat-x;
 flex-direction: row;
+@media (max-width: 1024px) {
+padding: 0 20px;
+}
 `;
 
 export const FooterItemsContainer = styled.div`
@@ -24,10 +27,20 @@ flex: 1;
 export const FooterItem = styled.div`
 margin-right: 15px;
 font-size: 12px;
+display: flex;
+align-items: center;
 `;
 
 export const FooterSocialNetworkingContainer = styled.div`
 display: flex;
 flex-direction: row;
 flex: 1;
+`;
+
+export const FacebookImg = styled.img`
+width: 25px;
+`;
+
+export const TwitterImg = styled.img`
+width: 25px;
 `;

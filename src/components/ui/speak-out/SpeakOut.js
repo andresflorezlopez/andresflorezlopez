@@ -9,7 +9,7 @@ const SpeakOut = () => (
     <Tags.SpeakOutContainer>
       <Tags.SpeakOutHeader>
         <Tags.SpeakOutHeaderRegular>
-          Speak out. <br />
+          Speak out.
           Be heard.
         </Tags.SpeakOutHeaderRegular>
         <Tags.SpeakOutHeaderBold>

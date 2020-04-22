@@ -20,16 +20,32 @@ margin: 20px 0;
 `;
 
 export const SpeakOutHeader = styled.div`
-width: 270px;
+flex: 3;
+flex: 3;
+align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+@media (max-width: 1024px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 `;
 
-export const SpeakOutHeaderRegular = styled.div``;
+export const SpeakOutHeaderRegular = styled.div`
+font-size: 15px;
+`;
 
 export const SpeakOutHeaderBold = styled.div`
 font-weight: bold;
-font-size: 20px;
+font-size: 25px;
 `;
 
 export const SpeakOutContent = styled.div`
 padding: 10px 0px;
+flex: 13;
+@media (max-width: 1024px) {
+  text-align: justify;
+}
 `;

@@ -6,9 +6,9 @@ margin: 20px 0;
 position: relative;
 display: flex;
 align-items: flex-end;
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -28,16 +28,13 @@ align-items: flex-end;
 export const InformationContainer = styled.div`
 position: relative;
 color: white;
-padding: 0 20px;
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 1024px) {
   bottom: 25%;
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  bottom: 25%;
+  padding: 0 20px;
 }
 @media (min-width: 1025px){ 
   bottom: 14%;
+  padding: 0 20px 0 40px;
 }
 `;
 
@@ -58,7 +55,15 @@ export const Rate = styled.div`
   width: 100%;
 `;
 
-export const TimeAgo = styled.div``;
+export const TimeAgo = styled.div`
+justify-content: flex-end;
+align-self: center;
+padding: 0 21px;
+text-align: right;
+font-size: 12px;
+background: rgba(0,0,0,0.3);
+flex: 1;
+`;
 
 export const Image = styled.img`
 position: absolute;
@@ -93,4 +98,29 @@ color: white;
 export const RightPercentage = styled.div`
 color: white;
 margin-left: 10px;
+`;
+
+export const ViewProfile = styled.div`
+border: solid 2px;
+border-color: rgba(255, 255, 255, 0.4);
+padding: 10px 20px;
+font-weight: bold;
+margin: 10px 0;
+`;
+
+export const FooterCharacterCard = styled.div`
+display: flex;
+flex-direction: row;
+`;
+
+export const Finalresult = styled.div`
+padding: 10px 10px 10px 10px;
+background: ${props => props.color};
+position: absolute;
+@media (max-width: 1024px) {
+  top: 0;
+}
+@media (min-width: 1025px){ 
+  bottom: 35%;
+}
 `;
