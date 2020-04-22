@@ -6,9 +6,9 @@ margin: 20px 0;
 position: relative;
 display: flex;
 align-items: flex-end;
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
 }
 
