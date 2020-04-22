@@ -28,16 +28,13 @@ align-items: flex-end;
 export const InformationContainer = styled.div`
 position: relative;
 color: white;
-padding: 0 20px;
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 1024px) {
   bottom: 25%;
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  bottom: 25%;
+  padding: 0 20px;
 }
 @media (min-width: 1025px){ 
   bottom: 14%;
+  padding: 0 20px 0 40px;
 }
 `;
 
@@ -114,5 +111,16 @@ margin: 10px 0;
 export const FooterCharacterCard = styled.div`
 display: flex;
 flex-direction: row;
+`;
 
+export const Finalresult = styled.div`
+padding: 10px 10px 10px 10px;
+background: ${props => props.color};
+position: absolute;
+@media (max-width: 1024px) {
+  top: 0;
+}
+@media (min-width: 1025px){ 
+  bottom: 35%;
+}
 `;

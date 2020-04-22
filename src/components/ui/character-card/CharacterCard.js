@@ -16,10 +16,26 @@ const CharacterCard = ({character, onVotingLike, onVotingDisike}) => {
   } = character;
   const totalVotes = like + dislike;
   const likePercentage = Math.floor(like/totalVotes*100);
-  const dislikePercentage = Math.floor(dislike/totalVotes*100)
+  const dislikePercentage = Math.floor(dislike/totalVotes*100);
+
+  const renderFinalResult = () => {
+    if (like > dislike){
+      return (
+        <Tags.Finalresult color="rgba(254, 145, 40, 0.7)" >
+          <FontAwesomeIcon color="white" icon={faThumbsUp} size="1x" />
+        </Tags.Finalresult>
+      );
+    }
+    return (
+      <Tags.Finalresult color="rgba(66, 168, 161, 0.7)">
+        <FontAwesomeIcon color="white" icon={faThumbsDown} size="1x" flip="horizontal" pull="right" />
+      </Tags.Finalresult>
+    );
+  }
   return (
     <Tags.CharacterCardContainer>
       <Tags.Image alt="pope" src={KaneyWest} />
+      {renderFinalResult()}
       <Tags.InformationContainer>
         <Tags.Name>{character.name}</Tags.Name>
         <Tags.Description>
