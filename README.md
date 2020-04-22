@@ -12,6 +12,10 @@ The root-component stars all boot-loaders that were desinged to support the app.
 
 In the project directory, you can run:
 
+### `yarn test`
+
+Runs tests
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
