@@ -75,3 +75,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 33 directories
 ```
+
+## What next
+
+- create slider with chracters information. I prefer to create this component insted to use a plugin 
+- add sagas as a middleware to call API when the user needs to interact with API
